@@ -1,0 +1,70 @@
+<div class="box-container">
+  <ui-carousel
+    slides="$ctrl.product.image"
+    slides-to-show="1"
+    slides-to-scroll="1"
+    initial-slide="0"
+  >
+    <!-- For slider render -->
+    <carousel-item>
+      <!-- placed your item content here -->
+
+      <img src="{{ item.src }}" alt="Image" />
+      <!-- end -->
+    </carousel-item>
+
+    <!-- For customize carousel next, previous button -->
+    <carousel-prev>
+      <!-- placed your previous button here -->
+      <button>Prev</button>
+      <!-- end -->
+    </carousel-prev>
+
+    <carousel-next>
+      <!-- placed your next button here -->
+      <button>next</button>
+      <!-- end -->
+    </carousel-next>
+  </ui-carousel>
+</div>
+
+<h1>{{ $ctrl.product.name }}</h1>
+
+<div ng-cloak>
+  <md-content>
+    <md-tabs class="md-primary" md-center-tabs>
+      <md-tab label="Spec">
+        <md-content class="md-padding">
+          <h2 class="md-display-1">{{ $ctrl.product.name }} Spec</h2>
+          <p class="md-body-1">
+            {{ $ctrl.product.spec }}
+          </p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Reviews">
+        <md-content class="md-padding">
+          <h2 class="md-display-1">{{ $ctrl.product.name }} Reviews</h2>
+          <div class="md-body-1">
+            <ul>
+              <li ng-repeat="review in $ctrl.product.reviews">
+                Name: {{ review.name }} | Review:{{ review.review }}
+              </li>
+            </ul>
+          </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Comments">
+        <md-content class="md-padding">
+          <h2 class="md-display-1">Comments</h2>
+          <div class="md-body-1">
+            Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum
+            tellus. Curabitur posuere molestie dictum. Morbi eget congue risus,
+            quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi.
+            Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac
+            est.
+          </div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>

@@ -1,0 +1,11 @@
+<md-content >
+  <md-list flex>
+    <md-list-item class="md-3-line cart-content" ng-repeat="c in cart" ng-click="null">
+      <img ng-src="{{c.thumb}}" class="md-avatar" alt="{{item.who}}" />
+      <div class="md-list-item-text" layout="row">
+        <span>{{ c.name }}</span>
+        <span>Price: {{ c.price | currency: "€" }}</span>
+        <span>{{c.count}}</span>
+      </div>
+    </md-list-item>
+ </md-contnet>

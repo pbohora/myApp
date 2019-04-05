@@ -1,0 +1,22 @@
+<div>
+  <ul class="product-section">
+    <li ng-repeat="product in $ctrl.products">
+      <md-card>
+        <img
+          ng-src="{{ product.thumb }}"
+          class="md-card-image"
+          alt="image caption"
+        />
+        <md-card-content>
+          <div class="content">
+            <a ui-sref="product({ productId: product.id })"
+              ><h2>{{ product.name }}</h2></a
+            >
+            <p>Price: {{ product.price | currency: "€" }}</p>
+            <button ng-click="addItem(product)">Add to cart</button>
+          </div>
+        </md-card-content>
+      </md-card>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,119 @@
+.active {
+  color: red;
+  font-weight: bold;
+}
+.statevis {
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  z-index: -1;
+  height: 5em;
+}
+
+.product-section {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+md-card {
+  width: 500px;
+}
+.product-section img {
+  height: 500px;
+}
+
+md-card a {
+  display: inline-block;
+  padding-right: 45px;
+}
+md-card p {
+  display: inline-block;
+  padding-right: 45px;
+  margin-right: 10px solid black;
+}
+md-card button {
+  display: inline-block;
+  padding-right: 45px;
+}
+
+.box-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.box-container img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-prev {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+}
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+}
+button {
+  padding: 8px 20px;
+  background-color: #3f51b5;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-section md-card {
+    width: 95%;
+  }
+  .box-container {
+    width: 95%;
+    height: 60%;
+  }
+  .box-container button {
+    display: none;
+  }
+  .box-container img {
+    width: 100%;
+    height: 95%;
+  }
+  md-card a {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  md-card p {
+    padding-right: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  md-card button {
+    padding-right: 5px;
+  }
+}
+
+md-list-item span {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cart-content {
+  background-color: rgb(215, 221, 229);
+  margin: 10px;
+}

@@ -1,0 +1,15 @@
+<div ng-controller="productController">
+    <md-content class="md-padding">
+      <md-nav-bar
+       md-selected-nav-item="currentNavItem"
+       nav-bar-aria-label="navigation links">
+       <md-nav-item md-nav-href="#/products" ui-sref="products" name="products">
+         Products
+       </md-nav-item>
+       <md-nav-item md-nav-href="#/cart" ui-sref="cart" name="cart">
+         Cart ({{total}})
+       </md-nav-item>              
+     </md-nav-bar> 
+   </md-content>
+   </md-nav-bar> 
+ </div>
